@@ -1,0 +1,153 @@
+header {
+  height: 170px;
+  border-bottom: 1px solid #ddd;
+}
+
+.upper_align {
+  position: relative;
+  height: 50px;
+  background: #243c84;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upper_align .left {
+  position: relative;
+  float: left;
+  width: auto;
+  border-bottom: none;
+  z-index: 51;
+  width: 100%;
+}
+
+.upper_align .left li {
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  float: left;
+  background: url(/images/util_line.gif) no-repeat;
+  background-position: right;
+  text-align: center;
+}
+
+.upper_align .left li:last-child {
+  background: none;
+}
+
+.upper_align .left li.on {
+  background-color: #fff;
+}
+.upper_align .left > .on a {
+  color: #243c84;
+}
+
+.upper_align .left li a {
+  font-size: 13px;
+  display: block;
+  height: 30px;
+}
+
+.upper_align .right {
+  position: relative;
+  float: right;
+  width: auto;
+  border-bottom: none;
+  z-index: 51;
+  width: 100%;
+  left: 220px;
+}
+
+.right li {
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  float: left;
+  background: url(/images/util_line.gif) no-repeat;
+  background-position: right;
+  text-align: center;
+  display: flex;
+}
+
+.right li:last-child {
+  background: none;
+}
+
+.right li a {
+  font-size: 13px;
+  display: block;
+  height: 30px;
+}
+
+.top_sns {
+  display: flex;
+  list-style: none;
+  padding: 0 20px 0 0px;
+  margin: 0;
+}
+
+.top_sns li {
+  display: flex;
+  margin: 0 5px 0 0;
+}
+
+.top_sns .blind {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.top_sns li a {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.top_sns li:nth-child(1) a {
+  background: url(/images/top_sns01.png) no-repeat;
+}
+.top_sns li:nth-child(2) a {
+  background: url(/images/top_sns02.png) no-repeat;
+}
+.top_sns li:nth-child(3) a {
+  background: url(/images/top_sns03.png) no-repeat;
+}
+.top_sns li:nth-child(4) a {
+  background: url(/images/top_sns04.png) no-repeat;
+}
+
+.top_search {
+  position: relative;
+  margin-right: 30px;
+}
+
+.top_search input {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  border: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+  left: 0px;
+  z-index: 99;
+}
+
+.top_search a {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0px;
+  width: 38px;
+  height: 30px;
+  background: url(/images/icon_search.gif) no-repeat center;
+  cursor: pointer;
+  z-index: 99;
+}
