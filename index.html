@@ -7,6 +7,13 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/font/font.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -51,14 +58,14 @@
         <div class="nav">
           <ul class="gnb">
             <li>
-              <a href="#">원두</a>
+              <a href="#"><span>원두</span></a>
               <ul class="sub">
                 <li><a href="#">이디야 블렌드</a></li>
                 <li><a href="#">품질</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">메뉴</a>
+              <a href="#"><span>메뉴</span></a>
               <ul class="sub">
                 <li><a href="#">음료</a></li>
                 <li><a href="#">푸드</a></li>
@@ -66,7 +73,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">유통제품</a>
+              <a href="#"><span>유통제품</span></a>
               <ul class="sub">
                 <li><a href="#">스틱커피</a></li>
                 <li><a href="#">커피믹스</a></li>
@@ -78,14 +85,14 @@
               </ul>
             </li>
             <li>
-              <a href="#">이디야 멤버스</a>
+              <a href="#"><span>이디야 멤버스</span></a>
               <ul class="sub">
                 <li><a href="#">멤버십안내</a></li>
                 <li><a href="#">서비스안내</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">상품권·제휴카드</a>
+              <a href="#"><span>상품권·제휴카드</span></a>
               <ul class="sub">
                 <li><a href="#">제휴카드(하나·신환)</a></li>
                 <li><a href="#">기프트카드</a></li>
@@ -94,7 +101,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">브랜드 소식</a>
+              <a href="#"><span>브랜드 소식</span></a>
               <ul class="sub">
                 <li><a href="#">공지사항</a></li>
                 <li><a href="#">이벤트 안내</a></li>
@@ -102,7 +109,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">고객 지원</a>
+              <a href="#"><span>고객 지원</span></a>
               <ul class="sub">
                 <li><a href="#">고객의 소리</a></li>
                 <li><a href="#">소비자중심경영(CCM)</a></li>
@@ -111,7 +118,58 @@
             </li>
           </ul>
         </div>
+        <div class="bg"></div>
       </header>
+      <!-- main swiper slider -->
+      <div class="main">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/mainslide1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/mainslide2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/mainslide3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/mainslide4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      //gnb menu slide, bg slide
+      $(document).ready(function () {
+        $(".gnb").hover(function () {
+          $(".sub li").stop().slideToggle();
+          $(".bg").stop().slideToggle();
+        });
+      });
+
+      // swiper slide
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

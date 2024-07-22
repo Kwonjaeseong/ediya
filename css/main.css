@@ -10,6 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .upper_align .left {
@@ -47,6 +48,7 @@ header {
   font-size: 13px;
   display: block;
   height: 30px;
+  color: #fff;
 }
 
 .upper_align .right {
@@ -79,6 +81,7 @@ header {
   font-size: 13px;
   display: block;
   height: 30px;
+  color: #fff;
 }
 
 .top_sns {
@@ -150,4 +153,110 @@ header {
   background: url(/images/icon_search.gif) no-repeat center;
   cursor: pointer;
   z-index: 99;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* gnb */
+
+.nav {
+  position: relative;
+  width: 1920px;
+  height: 40px;
+}
+
+.gnb {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  display: flex;
+}
+
+.gnb li a {
+  height: auto;
+  line-height: normal;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 40px;
+  color: #202023;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+}
+
+.gnb > li:hover > a span {
+  border-bottom: 4px solid #202023;
+}
+
+.gnb .sub {
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  top: 40px;
+  z-index: 60;
+}
+
+.gnb .sub li {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  display: none;
+}
+
+.gnb .sub li a {
+  border-top: none;
+  border-bottom: none;
+  font-size: 13px;
+  color: #848484;
+  padding: 0 0;
+  margin-left: 40px;
+}
+
+.gnb .sub li a:hover {
+  font-weight: bold;
+}
+
+.bg {
+  position: absolute;
+  height: 230px;
+  background-color: #fff;
+  top: 169px;
+  left: 0;
+  width: 100%;
+  z-index: 59;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+
+/* swiper slide */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  font: 18px;
+  color: #fff;
+}
+
+.swiper-button-prev {
+  font: 18px;
+  color: #fff;
 }

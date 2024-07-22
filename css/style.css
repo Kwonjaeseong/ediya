@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
-a {
-  color: #fff;
+.container {
+  width: 1920px;
+}
+
+.upper_align {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
 }
