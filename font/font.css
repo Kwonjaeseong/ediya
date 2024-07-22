@@ -2,5 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-/* font-family: "Nunito Sans", sans-serif;
-font-family: "Noto Sans KR", sans-serif; */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* font-family: "Nunito Sans", sans-serif; */
+/* font-family: "Noto Sans KR", sans-serif; */
+/* font-family: 'NanumSquare', sans-serif;  */

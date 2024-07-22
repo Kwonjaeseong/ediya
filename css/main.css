@@ -238,7 +238,7 @@ header {
   display: none;
 }
 
-/* swiper slide */
+/* main swiper slide 1*/
 
 .swiper {
   width: 100%;
@@ -256,12 +256,187 @@ header {
   object-fit: cover;
 }
 
-.swiper-button-next {
-  font: 18px;
+.swiper .swiper-button-next {
   color: #fff;
 }
 
-.swiper-button-prev {
-  font: 18px;
+.swiper .swiper-button-prev {
   color: #fff;
+}
+
+
+.swiper .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #243C84;
+}
+
+/* swiper slide 2 */
+
+.mainbeanist {
+  padding: 60px 0 14px;
+  background: url(/images/main_beanist_bg.gif) #fce1a6 no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainbeanist h2 {
+  line-height: 1.1em;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+  color: #3c3c3c;
+}
+
+.mainbeanist h2 em {
+  display: block;
+  font-weight: 900;
+  color: #90470c;
+}
+
+.swiper.mySwiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.mainbeanist .swiper-slide {
+  display: flex;
+}
+
+.mainbeanist .swiper-slide ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.mainbeanist .swiper-slide ul li a img {
+  display: block;
+  width: 100%;
+  max-width: 153px;
+  height: 280px;
+  margin: auto;
+  object-fit: cover;
+}
+
+
+.mainbeanist .swiper-slide ul li a {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #693a13;
+  word-break: keep-all;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.mainbeanist .swiper-slide ul li a dl {
+  padding: 0 10px;
+  margin-top: 15px;
+  height: 64px;
+  text-align: center;
+}
+
+.mainbeanist .swiper-slide ul li a dt {
+  line-height: 1.2em;
+  font-size: 18x;
+  font-weight: 700;
+  color: #693a13;
+  word-break: keep-all;
+}
+
+.mainbeanist .swiper-slide ul li a dt span.block {
+  display: inline;
+}
+
+.mainbeanist .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.mainbeanist .swiper-pagination-bullet-active {
+  background-color: #693a13;
+}
+
+/* DREAM FACTORY */
+.dream_factory {
+  width: 100%;
+  height: 460px;
+  background: url(/images/dream_factory_bg.gif) repeat-y;
+  background-size: 100% auto;
+  overflow: hidden;
+  word-break: keep-all;
+  position: relative;
+}
+
+.dream_factory .factory_title {
+  max-width: 1180px;
+  height: 372px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.factory_title h2 {
+  text-align: left;
+  font-size: 30px;
+  color: #FFF;
+  font-weight: 900;
+  font-family: 'Nunito Sans', sans-serif;
+  padding-left: 5px;
+}
+
+.factory_title em {
+  text-align: left;
+  font-size: 110px;
+  display: block;
+  font-weight: 900;
+  font-style: normal;
+  -webkit-text-stroke: 0.3px #fff;
+  color: transparent;
+  padding-top: 60px;
+}
+
+.factory_title p {
+  font-size: 17px;
+  color: #FFF;
+  font-family: 'NanumSquare', sans-serif;
+  line-height: 1.4em;
+  margin-top: 17px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.df_btn.main a {
+  display: inline-block;
+  width: 188px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: solid 1px #fff;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 30px
+}
+
+.df_btn.main a:hover {
+  background: #fff;
+  color: #000;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+
+.factory_img {
+  position: absolute;
+  top: 120px;
+  right: -160px;
+}
+
+.factory_img img {
+  width: 1060px;
+  height: 348px;
+  object-fit: cover;
 }
