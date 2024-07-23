@@ -1,0 +1,66 @@
+<footer>
+  <div class="footer">
+    <ul class="f_top">
+      <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+      <li>
+        <a href="#"><em>개인정보처리방침</em></a>
+      </li>
+      <li><a href="#">멤버스 이용약관</a></li>
+      <li><a href="#">가맹 안내</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">점주의 방</a></li>
+    </ul>
+    <div id="lang_select" class="language_tab">
+      <a href="#x" onclick="select_lang()">Korean</a>
+      <ul class="lang_list">
+        <li>
+          <a href="#X" onclick="ch_lang('')">Korean</a>
+        </li>
+        <li>
+          <a href="#x" onclick="ch_lang('eng')">English</a>
+        </li>
+        <li>
+          <a href="#x" onclick="ch_lang('jap')">Japanish</a>
+        </li>
+      </ul>
+    </div>
+    <div class="f_logo">
+      <img src="/images/bottom_logo.gif" alt="" />
+    </div>
+    <p class="copy_info">
+      <span
+        >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동
+        221-17)</span
+      >
+      <span>TEL : 02-543-6467</span>
+      FAX : 02-543-7191
+      <span>사업자등록번호 : 107-86-16302</span>
+      <span>통신판매업 신고 : 강남 제 002519호</span>
+      대표이사 : 김상수
+    </p>
+    <p class="copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+    <div class="f_ccm">
+      <span><img src="/images/footer_ccm.png" alt="" /></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // footer language
+  $(document).ready(function () {
+    // language_tab 클래스를 클릭했을 때
+    $(".language_tab > a").click(function (e) {
+      e.preventDefault(); // 기본 동작 방지
+      var submenu = $(this).next(".lang_list");
+      // 서브메뉴를 슬라이드 토글
+      submenu.slideToggle();
+    });
+
+    // 문서의 다른 부분을 클릭했을 때 서브메뉴 닫기
+    $(document).click(function (e) {
+      if (!$(e.target).closest(".language_tab").length) {
+        $(".lang_list").slideUp();
+      }
+    });
+  });
+</script>
