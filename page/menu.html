@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이디야 커피</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/font/font.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header_container"></div>
+      <!-- menu contents -->
+      <div class="menu_contents">
+        <div class="menu_intro">
+          <h1 class="menu_intro_tt">
+            <img src="/images/menu_intro_tt.png" alt="" />
+          </h1>
+          <p class="inner_tt">Always beside you, EDIYA COFFEE</p>
+          <p class="inner_txt">한 잔의 커피 그 이상의 감동을 경험하세요.</p>
+          <ul class="intro_btn">
+            <li><a href="#">음료</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">MD</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer_container"></div>
+    </div>
+    <script>
+      $(function () {
+        $(".header_container").load("../inc/header.html");
+        $(".footer_container").load("../inc/footer.html");
+      });
+    </script>
+    <script src="/js/swiper-slider.js"></script>
+  </body>
+</html>
