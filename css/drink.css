@@ -1,0 +1,239 @@
+.menu_contents {
+}
+
+.main_intro {
+  background: url(/images/drink_visual.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
+
+.main_intro_tt {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 100;
+}
+
+.main_intro .inner_tt {
+  color: #fff;
+  display: block;
+  width: auto;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.intro_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.intro_btn .active {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_btn li {
+  display: inline-block;
+  border: solid 1px #fff;
+  width: 176px;
+  height: 37px;
+  opacity: 0.7;
+  border-left: none;
+  text-align: center;
+  line-height: 37px;
+  border-left: none;
+}
+
+.intro_btn li:first-child {
+  border-left: solid 1px #fff;
+}
+
+.intro_btn li a {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  color: #fff;
+  text-align: center;
+}
+
+.intro_btn li a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* location */
+
+.location {
+  display: block;
+  width: 1180px;
+  height: 60px;
+  margin: 0 auto;
+  color: #898989;
+  font-size: 12px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: right;
+  padding-top: 38px;
+}
+
+.location span {
+  background: url(/images/icon_loc.png) right no-repeat;
+  margin-right: 8px;
+  padding-right: 15px;
+}
+
+.reco_title {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: url(/images/menu_line.gif) no-repeat center center;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 100;
+  color: #202023;
+}
+
+.reco_title h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* recommend drink swiper slider */
+.drink_swiper .swiper {
+  width: 1180px;
+  height: 100%;
+}
+
+.drink_swiper .swiper-slide {
+  text-align: center;
+
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.drink_swiper .swiper-slide p {
+  font-size: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+.drink_swiper .swiper-slide img {
+  display: block;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.drink_swiper .swiper-slide .new_icon {
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.drink_swiper .swiper-slide .new_icon img {
+  width: 66px;
+  height: 66px;
+}
+
+.drink_swiper .swiper-button-next,
+.drink_swiper .swiper-button-prev {
+  color: #ccc; /* 버튼 색상 */
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* MENU SEARCH */
+
+.menu_cate {
+  margin-top: 100px;
+}
+
+.menu_cate .cate_align {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.menu_sch {
+  display: table;
+  width: 100%;
+  height: 146px;
+  padding: 23px 35px 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.menu_sch h4 {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  float: left;
+  margin-top: 10px;
+}
+
+.menu_sch .search_bar {
+  width: 100%;
+  max-width: 250px;
+  height: 38px;
+  /* margin: auto; */
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  float: right;
+}
+
+.search_bar input {
+  width: 81%;
+  height: 36px;
+  border: none;
+}
+
+.search_bar button {
+  width: 34px;
+  height: 38px;
+  background: url(/images/icon_search.gif) no-repeat 10px center;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu_sch ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
+}
+
+.menu_sch ul li {
+  display: block;
+  margin-left: 35px;
+  margin-right: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}

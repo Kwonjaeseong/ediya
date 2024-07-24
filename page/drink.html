@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이디야 커피</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/font/font.css" />
+    <link rel="stylesheet" href="/css/drink.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header_container"></div>
+      <!-- menu contents -->
+      <div class="main_contents">
+        <div class="main_intro">
+          <h1 class="main_intro_tt">음료</h1>
+          <p class="inner_tt">ALWAYS BESIDE YOU, EDIYA COFFEE</p>
+          <ul class="intro_btn">
+            <li><a href="#" class="active">음료</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">MD</a></li>
+          </ul>
+        </div>
+        <div class="location">
+          <span>HOME</span>
+          <span>메뉴</span>
+          음료
+        </div>
+        <div class="reco_title">
+          <h3>추천 상품</h3>
+        </div>
+        <div class="drink_swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="new_icon"
+                    ><img src="/images/new_icon.png" alt=""
+                  /></span>
+                  <img src="/images/IMG_1647322170791.png" alt="" />
+                  <p>베리하츄핑 딸기 드링킹 요거트</p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="new_icon"
+                    ><img src="/images/new_icon.png" alt="" /></span
+                  ><img src="/images/IMG_1714010281351.png" alt="" />
+                  <p>팥인절미 1인빙수</p></a
+                >
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><span class="new_icon"
+                    ><img src="/images/new_icon.png" alt="" /></span
+                  ><img src="/images/IMG_1714010425104.png" alt="" />
+                  <p>망고 요거놀라 1인빙수</p></a
+                >
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><span class="new_icon"
+                    ><img src="/images/new_icon.png" alt="" /></span
+                  ><img src="/images/IMG_1714010526737.png" alt="" />
+                  <p>초당 옥수수 1인 빙수</p></a
+                >
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><span class="new_icon"
+                    ><img src="/images/new_icon.png" alt="" /></span
+                  ><img src="/images/IMG_1714010615408.png" alt="" />
+                  <p>팥인절미 눈꽃빙수</p></a
+                >
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="new_icon">
+                    <img src="/images/new_icon.png" alt="" />
+                  </span>
+                  <img src="/images/IMG_1714010676463.png" alt="" />
+                  <p>애플망고 눈꽃빙수</p></a
+                >
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="new_icon">
+                    <img src="/images/new_icon.png" alt="" />
+                  </span>
+                  <img src="/images/IMG_1717116358189.png" alt="" />
+                  <p>말랑핑 블루베리 드링킹 요거트</p></a
+                >
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="menu_cate">
+          <div class="cate_align">
+            <div class="menu_sch">
+              <h4>메뉴 검색</h4>
+              <div class="search_bar">
+                <input type="text" class="sch_txt" />
+                <button></button>
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="chkList" id="COFFEE" />
+                  <label for="COFFEE">COFFEE</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chkList" id="ICE FLAKES" />
+                  <label for="ICE FLAKES">ICE FLAKES</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chkList" id="SEASON" />
+                  <label for="SEASON">SEASON</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="drink_list">
+          <div class="drink_align">
+            <ul id="drink_ul">
+              <li>
+                <div class="drink_detail" id="nutri_741">
+                  <div class="dd_tt">
+                    <h2>
+                      (L)달달커피
+                      <span>(L)Mixed coffee</span>
+                    </h2>
+                    <div class="detail_close">
+                      <a href="#" onclick="hide_nutri('741')">
+                        <img src="/images/detail_close.gif" alt="창닫기" />
+                      </a>
+                    </div>
+                    <div class="detail txt">
+                      <p>
+                        이디야의 노하우가 집약된 커피믹스의 맛을 즐길 수 있는
+                        음료
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comp">
+                    <div class="drink_nutri">
+                      <dl>
+                        <dt>칼로리</dt>
+                        <dd>(277kcal)</dd>
+                      </dl>
+                      <dl>
+                        <dt>당류</dt>
+                        <dd>(20g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>단백질</dt>
+                        <dd>(2g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>포화지방</dt>
+                        <dd>(9g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>나트륨</dt>
+                        <dd>(39mg)</dd>
+                      </dl>
+                      <dl>
+                        <dt>카페인</dt>
+                        <dd>(236mg)</dd>
+                      </dl>
+                    </div>
+                    <div class="allergy">알레르기 성분 정보 : 우유</div>
+                    <div class="high_caffeine">
+                      <p>※ 고카페인 함유</p>
+                      <p>
+                        ※ 어린이, 임산부, 카페인 민감자는 섭취에 주의해주시기
+                        바랍니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" onclick="show_nutri('741')">
+                  <img src="/images/drink_list1.png" alt="달달커피 L" />
+                </a>
+                <div class="drink_tt">
+                  <a href="#">
+                    <span>(L)달달커피</span>
+                  </a>
+                  <a href="#" class="gift_btn">선물하기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer_container"></div>
+    </div>
+    <script>
+      $(function () {
+        $(".header_container").load("../inc/header.html");
+        $(".footer_container").load("../inc/footer.html");
+      });
+
+      // swiper slide
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
