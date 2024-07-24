@@ -62,3 +62,217 @@
   color: #fff;
   text-align: center;
 }
+
+.intro_btn li a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* sub banner start */
+/* bg1 */
+.sub_banner.bg1 {
+  background: url(/images/menu_intro_bg01.jpg) no-repeat center;
+  background-size: cover;
+  height: 680px;
+}
+
+.sub_banner.bg1 .sub_tt {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 180px 0 40px 280px;
+}
+
+.sub_banner.bg1 .sub_tt::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin-top: 30px;
+}
+
+.sub_banner.bg1 .sub_tt_s {
+  padding-left: 280px;
+}
+
+.sub_banner.bg1 .sub_tt_s em {
+  font-style: normal;
+  font-size: 22px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 600;
+}
+
+.sub_banner.bg1 .sub_text {
+  font-size: 17px;
+  color: #707070;
+  padding-left: 280px;
+  padding-top: 30px;
+}
+
+.sub_banner.bg1 .intro_btn {
+  display: inline-block;
+  border: solid 1px #000;
+  color: #000;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  margin-left: 280px;
+}
+
+.sub_banner.bg1 .intro_btn:hover {
+  display: inline-block;
+  background-color: #002f6c;
+  color: #fff;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  border-left: none;
+  text-align: center;
+  line-height: 44px;
+  border-left: none;
+}
+
+/* bg2 */
+.sub_banner.bg2 {
+  background: url(/images/menu_intro_bg02.jpg) no-repeat center;
+  background-size: cover;
+  height: 680px;
+  /* text-align: center; */
+}
+
+.sub_banner.bg2 h2 {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 180px 0 30px 0;
+  color: #fff;
+  margin-left: 900px;
+}
+
+.sub_banner.bg2 h2::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #fff;
+  margin-top: 30px;
+}
+
+.sub_banner.bg2 .sub_tt_s {
+  margin-left: 900px;
+}
+
+.sub_banner.bg2 .sub_tt_s em {
+  font-style: normal;
+  color: #fff;
+  font-size: 22px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 600;
+}
+
+.sub_banner.bg2 .sub_text {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 30px;
+  margin-left: 900px;
+}
+
+.sub_banner.bg2 .intro_btn {
+  display: inline-block;
+  border: solid 1px #fff;
+  color: #fff;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  margin-left: 900px;
+}
+
+.sub_banner.bg2 .intro_btn:hover {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  border-left: none;
+  text-align: center;
+  line-height: 44px;
+  border-left: none;
+}
+
+/* bg3 */
+.sub_banner.bg3 {
+  background: url(/images/menu_intro_bg03.jpg) no-repeat center;
+  background-size: cover;
+  height: 680px;
+}
+
+.sub_banner.bg3 .sub_tt {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 180px 0 40px 280px;
+}
+
+.sub_banner.bg3 .sub_tt::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin-top: 30px;
+}
+
+.sub_banner.bg3 .sub_tt_s {
+  padding-left: 280px;
+}
+
+.sub_banner.bg3 .sub_tt_s em {
+  font-style: normal;
+  font-size: 22px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 600;
+}
+
+.sub_banner.bg3 .sub_text {
+  font-size: 17px;
+  color: #707070;
+  padding-left: 280px;
+  padding-top: 30px;
+}
+
+.sub_banner.bg3 .intro_btn {
+  display: inline-block;
+  border: solid 1px #000;
+  color: #000;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  margin-left: 280px;
+}
+
+.sub_banner.bg3 .intro_btn:hover {
+  display: inline-block;
+  background-color: #002f6c;
+  color: #fff;
+  text-decoration: inherit;
+  font-weight: bold;
+  width: 190px;
+  height: 44px;
+  border-left: none;
+  text-align: center;
+  line-height: 44px;
+  border-left: none;
+}
