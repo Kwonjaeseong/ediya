@@ -120,15 +120,19 @@
               </div>
               <ul>
                 <li>
-                  <input type="checkbox" name="chkList" id="COFFEE" />
+                  <input type="checkbox" name="chkList" data-filter="COFFEE" />
                   <label for="COFFEE">COFFEE</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="chkList" id="ICE FLAKES" />
+                  <input
+                    type="checkbox"
+                    name="chkList"
+                    data-filter="ICE FLAKES"
+                  />
                   <label for="ICE FLAKES">ICE FLAKES</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="chkList" id="SEASON" />
+                  <input type="checkbox" name="chkList" data-filter="SEASON" />
                   <label for="SEASON">SEASON</label>
                 </li>
               </ul>
@@ -139,19 +143,19 @@
         <div class="drink_list">
           <div class="drink_align">
             <ul id="drink_ul">
-              <li>
-                <div class="drink_detail" id="nutri_741">
+              <li data-category="COFFEE">
+                <div class="drink_detail" id="nutri_1">
                   <div class="dd_tt">
                     <h2>
                       (L)달달커피
                       <span>(L)Mixed coffee</span>
                     </h2>
                     <div class="detail_close">
-                      <a href="#" onclick="hide_nutri('741')">
+                      <a href="#x" onclick="hide_nutri('1')">
                         <img src="/images/detail_close.gif" alt="창닫기" />
                       </a>
                     </div>
-                    <div class="detail txt">
+                    <div class="detail_txt">
                       <p>
                         이디야의 노하우가 집약된 커피믹스의 맛을 즐길 수 있는
                         음료
@@ -196,12 +200,195 @@
                   </div>
                 </div>
 
-                <a href="#" onclick="show_nutri('741')">
+                <a href="#x" onclick="show_nutri('1')">
                   <img src="/images/drink_list1.png" alt="달달커피 L" />
                 </a>
                 <div class="drink_tt">
-                  <a href="#">
+                  <a href="#x">
                     <span>(L)달달커피</span>
+                  </a>
+                  <a href="#" class="gift_btn">선물하기</a>
+                </div>
+              </li>
+
+              <li data-category="ICE FLAKES">
+                <div class="drink_detail" id="nutri_2">
+                  <div class="dd_tt">
+                    <h2>
+                      팥인절미 1인빙수
+                      <span>Red Bean Injeolmi</span>
+                    </h2>
+                    <div class="detail_close">
+                      <a href="#x" onclick="hide_nutri('2')">
+                        <img src="/images/detail_close.gif" alt="창닫기" />
+                      </a>
+                    </div>
+                    <div class="detail_txt">
+                      <p>
+                        아삭한 얼음과 팥이 어우러진 베이스에 아이스크림, 통팥,
+                        인절미,시리얼을 올린 빙수
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comp">
+                    <div class="drink_nutri">
+                      <dl>
+                        <dt>칼로리</dt>
+                        <dd>(569kcal)</dd>
+                      </dl>
+                      <dl>
+                        <dt>당류</dt>
+                        <dd>(53g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>단백질</dt>
+                        <dd>(11g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>포화지방</dt>
+                        <dd>(6g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>나트륨</dt>
+                        <dd>(218mg)</dd>
+                      </dl>
+                      <dl>
+                        <dt>카페인</dt>
+                        <dd>(0mg)</dd>
+                      </dl>
+                    </div>
+                    <div class="allergy">알레르기 성분 정보 : 우유, 대두</div>
+                  </div>
+                </div>
+
+                <a href="#x" onclick="show_nutri('2')">
+                  <img src="/images/drink_list2.png" alt="팥인절미1인빙수" />
+                </a>
+                <div class="drink_tt">
+                  <a href="#x">
+                    <span>팥인절미 1인빙수</span>
+                  </a>
+                  <a href="#" class="gift_btn">선물하기</a>
+                </div>
+              </li>
+
+              <li data-category="SEASON">
+                <div class="drink_detail" id="nutri_3">
+                  <div class="dd_tt">
+                    <h2>
+                      베리하츄핑 딸기 드링킹 요거트
+                      <span>Strawberry Drinking Yogurt</span>
+                    </h2>
+                    <div class="detail_close">
+                      <a href="#x" onclick="hide_nutri('3')">
+                        <img src="/images/detail_close.gif" alt="창닫기" />
+                      </a>
+                    </div>
+                    <div class="detail_txt">
+                      <p>
+                        마시면서 즐기는 드링킹 요거트에 새콤달콤한 딸기가
+                        블렌딩된 음료
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comp">
+                    <div class="drink_nutri">
+                      <dl>
+                        <dt>칼로리</dt>
+                        <dd>(328kcal)</dd>
+                      </dl>
+                      <dl>
+                        <dt>당류</dt>
+                        <dd>(47g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>단백질</dt>
+                        <dd>(8g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>포화지방</dt>
+                        <dd>(5g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>나트륨</dt>
+                        <dd>(122mg)</dd>
+                      </dl>
+                      <dl>
+                        <dt>카페인</dt>
+                        <dd>(0mg)</dd>
+                      </dl>
+                    </div>
+                    <div class="allergy">알레르기 성분 정보 : 우유, 대두</div>
+                  </div>
+                </div>
+
+                <a href="#x" onclick="show_nutri('3')">
+                  <img src="/images/drink_list3.png" alt="베리하츄핑" />
+                </a>
+                <div class="drink_tt">
+                  <a href="#x">
+                    <span>베리하츄핑 딸기 드링킹 요거트</span>
+                  </a>
+                  <a href="#" class="gift_btn">선물하기</a>
+                </div>
+              </li>
+
+              <li data-category="COFFEE">
+                <div class="drink_detail" id="nutri_4">
+                  <div class="dd_tt">
+                    <h2>
+                      ICED 바닐라 오트 콜드브루
+                      <span>ICED Vanilla Oat Cold Brew</span>
+                    </h2>
+                    <div class="detail_close">
+                      <a href="#x" onclick="hide_nutri('4')">
+                        <img src="/images/detail_close.gif" alt="창닫기" />
+                      </a>
+                    </div>
+                    <div class="detail_txt">
+                      <p>
+                        오트의 고소함과 부드러운 바닐라 크림이 콜드브루와
+                        어우러져 담백하게 즐길 수 있는 음료
+                      </p>
+                    </div>
+                  </div>
+                  <div class="comp">
+                    <div class="drink_nutri">
+                      <dl>
+                        <dt>칼로리</dt>
+                        <dd>(206kcal)</dd>
+                      </dl>
+                      <dl>
+                        <dt>당류</dt>
+                        <dd>(16g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>단백질</dt>
+                        <dd>(2g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>포화지방</dt>
+                        <dd>(4.4g)</dd>
+                      </dl>
+                      <dl>
+                        <dt>나트륨</dt>
+                        <dd>(151mg)</dd>
+                      </dl>
+                      <dl>
+                        <dt>카페인</dt>
+                        <dd>(78mg)</dd>
+                      </dl>
+                    </div>
+                    <div class="allergy">알레르기 성분 정보 : 우유, 대두</div>
+                  </div>
+                </div>
+
+                <a href="#x" onclick="show_nutri('4')">
+                  <img src="/images/drink_list4.png" alt="오트 콜드브루" />
+                </a>
+                <div class="drink_tt">
+                  <a href="#x">
+                    <span>ICED 바닐라 오트 콜드브루 </span>
                   </a>
                   <a href="#" class="gift_btn">선물하기</a>
                 </div>
@@ -217,6 +404,36 @@
       $(function () {
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
+      });
+
+      // drink popup
+      function show_nutri(id) {
+        document.getElementById("nutri_" + id).style.display = "block";
+      }
+
+      function hide_nutri(id) {
+        document.getElementById("nutri_" + id).style.display = "none";
+      }
+
+      //check box filtering
+      $('input[name="chkList"]').change(function () {
+        var selectedCategories = [];
+        $('input[name="chkList"]:checked').each(function () {
+          selectedCategories.push($(this).data("filter"));
+        });
+
+        if (selectedCategories.length > 0) {
+          $("#drink_ul li").each(function () {
+            var itemCategory = $(this).data("category");
+            if (selectedCategories.indexOf(itemCategory) > -1) {
+              $(this).show();
+            } else {
+              $(this).hide();
+            }
+          });
+        } else {
+          $("#drink_ul li").hide();
+        }
       });
 
       // swiper slide
