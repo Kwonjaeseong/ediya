@@ -896,3 +896,366 @@ footer .language_tab ul li a:hover {
   top: 90px;
   right: 320px;
 }
+
+.mo_gnb {
+  display: none;
+}
+
+.nav_btn {
+  display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  header {
+    height: 90px;
+  }
+
+  .upper_align {
+    width: 360px;
+    height: 30px;
+  }
+
+  .upper_align .left {
+    height: 30px;
+  }
+
+  .upper_align .left li {
+    width: 90px;
+    height: 30px;
+    padding: 0 0px;
+    line-height: 30px;
+    background-position: right 10px;
+  }
+
+  .upper_align .left li a {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    height: 30px;
+  }
+
+  .upper_align .left li:last-child {
+    background: none;
+  }
+
+  .upper_align .left > .on a {
+    color: #243c84;
+  }
+
+  .upper_align .right {
+    position: relative;
+    float: right;
+    width: auto;
+    border-bottom: none;
+    z-index: 51;
+    width: 100%;
+    left: 150px;
+    display: none;
+  }
+
+  .right li {
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    float: left;
+    background: url(/images/util_line.gif) no-repeat;
+    background-position: right;
+    text-align: center;
+    display: flex;
+  }
+
+  .right li:last-child {
+    background: none;
+  }
+
+  .right li a {
+    font-size: 13px;
+    display: block;
+    height: 30px;
+    color: #fff;
+  }
+
+  .top_sns {
+    display: flex;
+    list-style: none;
+    padding: 0 20px 0 0px;
+    margin: 0;
+    display: none;
+  }
+
+  .top_sns li {
+    display: flex;
+    margin: 0 5px 0 0;
+  }
+
+  .top_sns .blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+
+  .top_sns li a {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+
+  .top_sns li:nth-child(1) a {
+    background: url(/images/top_sns01.png) no-repeat;
+  }
+
+  .top_sns li:nth-child(2) a {
+    background: url(/images/top_sns02.png) no-repeat;
+  }
+
+  .top_sns li:nth-child(3) a {
+    background: url(/images/top_sns03.png) no-repeat;
+  }
+
+  .top_sns li:nth-child(4) a {
+    background: url(/images/top_sns04.png) no-repeat;
+  }
+
+  .top_search {
+    position: relative;
+    margin-right: 30px;
+    display: none;
+  }
+
+  .top_search input {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    left: 0px;
+    z-index: 99;
+  }
+
+  .top_search a {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0px;
+    width: 38px;
+    height: 30px;
+    background: url(/images/icon_search.gif) no-repeat center;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  /* logo */
+
+  .logo {
+    justify-content: left;
+    padding: 20px;
+    width: 182px;
+    height: 60px;
+  }
+
+  .logo img {
+    width: 182px;
+    height: 18px;
+  }
+
+  /* gnb */
+
+  .nav_btn {
+    display: initial;
+    float: right;
+    z-index: 99;
+  }
+
+  .nav_btn a {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    display: block;
+    width: 26px;
+    height: 22px;
+    background: url(/images/m_nav_btn.gif);
+  }
+
+  .nav_btn .blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+
+  .nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: none;
+  }
+
+  .mo_gnb {
+    display: initial;
+  }
+
+  .mo_gnb.on {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 50;
+  }
+
+  .mo_gnb .nav_close {
+    position: absolute;
+    right: 85%;
+    margin: 17px 13px 0 0;
+    z-index: 50;
+  }
+
+  .mo_gnb .mo_gnb_wrap {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    right: 0;
+    background: #1d326c;
+    overflow-y: auto;
+    z-index: 50;
+  }
+
+  .mo_top_util {
+    float: left;
+    width: 100%;
+    margin: 14px 0;
+  }
+  .mo_top_members {
+    float: left;
+    margin: 2px 20px 0 25px;
+  }
+
+  .mo_top_members li {
+    float: left;
+    margin-left: 12px;
+    padding-left: 13px;
+    background: url(/images/util_line_m.gif) no-repeat left;
+  }
+
+  .mo_top_members li a {
+    font-size: 14px;
+    color: #8e99b6;
+  }
+
+  .mo_top_members li:first-child {
+    background-color: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .mo_top_sns {
+    float: right;
+    margin-right: 15px;
+  }
+
+  .mo_top_sns li {
+    float: left;
+    margin-left: 5px;
+  }
+
+  .mo_top_sns li a {
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+
+  .mo_top_sns li:nth-child(1) a {
+    background: url(/images/m_top_sns01.gif) no-repeat;
+    background-size: cover;
+  }
+  .mo_top_sns li:nth-child(2) a {
+    background: url(/images/m_top_sns02.gif) no-repeat;
+    background-size: cover;
+  }
+  .mo_top_sns li:nth-child(3) a {
+    background: url(/images/m_top_sns03.gif) no-repeat;
+    background-size: cover;
+  }
+  .mo_top_sns li:nth-child(4) a {
+    background: url(/images/m_top_sns04.gif) no-repeat;
+    background-size: cover;
+  }
+
+  .mo_top_sns .blind {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+
+  .mo_main {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #192d65;
+    border-bottom: 1px solid #2e437c;
+  }
+
+  .mo_main > li {
+    background: url(/images/m_nav_arrow.gif) no-repeat right 20px;
+  }
+
+  .mo_main > li.on {
+    background: url(/images/m_nav_arrow_on.gif) no-repeat right 20px;
+  }
+
+  .mo_main > li > a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    border-top: 1px solid #2e437c;
+    border-bottom: 1px solid #192d65;
+    padding-left: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .mo_main li .mo_sub {
+    display: none;
+  }
+
+  .mo_sub > li {
+    background: #2a4181;
+  }
+
+  .mo_sub > li > a {
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    border-top: solid 1px #344a86;
+    border-bottom: solid 1px #203570;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 25px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+}

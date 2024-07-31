@@ -115,8 +115,8 @@
             <div class="menu_sch">
               <h4>메뉴 검색</h4>
               <div class="search_bar">
-                <input type="text" class="sch_txt" />
-                <button></button>
+                <input type="text" class="sch_txt" id="search_input" />
+                <button id="search_button"></button>
               </div>
               <ul>
                 <li>
@@ -405,53 +405,7 @@
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
       });
-
-      // drink popup
-      function show_nutri(id) {
-        document.getElementById("nutri_" + id).style.display = "block";
-      }
-
-      function hide_nutri(id) {
-        document.getElementById("nutri_" + id).style.display = "none";
-      }
-
-      //check box filtering
-      $('input[name="chkList"]').change(function () {
-        var selectedCategories = [];
-        $('input[name="chkList"]:checked').each(function () {
-          selectedCategories.push($(this).data("filter"));
-        });
-
-        if (selectedCategories.length > 0) {
-          $("#drink_ul li").each(function () {
-            var itemCategory = $(this).data("category");
-            if (selectedCategories.indexOf(itemCategory) > -1) {
-              $(this).show();
-            } else {
-              $(this).hide();
-            }
-          });
-        } else {
-          $("#drink_ul li").hide();
-        }
-      });
-
-      // swiper slide
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
     </script>
+    <script src="/js/drink.js"></script>
   </body>
 </html>
