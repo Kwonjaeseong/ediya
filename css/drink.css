@@ -1,5 +1,4 @@
-.menu_contents {
-}
+.menu_contents {}
 
 .main_intro {
   background: url(/images/drink_visual.jpg) no-repeat center;
@@ -151,7 +150,8 @@
 
 .drink_swiper .swiper-button-next,
 .drink_swiper .swiper-button-prev {
-  color: #ccc; /* 버튼 색상 */
+  color: #ccc;
+  /* 버튼 색상 */
   width: 22px;
   height: 22px;
   position: absolute;
@@ -255,7 +255,7 @@
   margin-bottom: 60px;
 }
 
-#drink_ul > li {
+#drink_ul>li {
   width: 283px;
   height: 467px;
   float: left;
@@ -267,7 +267,7 @@
   position: relative;
 }
 
-#drink_ul > li > a > img {
+#drink_ul>li>a>img {
   text-align: center;
   width: 100%;
   padding: 32px 0;
@@ -415,6 +415,7 @@
   line-height: 1.4em;
   font-size: 12px;
 }
+
 .high_caffeine {
   font-family: "Noto Sans KR", sans-serif;
   clear: left;
@@ -429,3 +430,7 @@
   font-weight: 500;
   color: #233e85;
 }
+
+/* mobile */
+
+@media screen and (max-width: 768px) {}
