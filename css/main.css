@@ -237,6 +237,10 @@ header {
   display: none;
 }
 
+.mo_main {
+  display: none;
+}
+
 /* main swiper slide 1*/
 
 .swiper {
@@ -908,8 +912,12 @@ footer .language_tab ul li a:hover {
 /* mobile */
 
 @media screen and (max-width: 768px) {
+  body {
+    width: 360px;
+  }
   /* header */
   header {
+    width: 360px;
     height: 90px;
   }
 
@@ -1108,30 +1116,49 @@ footer .language_tab ul li a:hover {
     display: none;
   }
 
+  /* gnb + opacity overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 검은색 배경, 투명도 50% */
+    z-index: 52; /* 모바일 네비게이션보다 낮은 z-index */
+  }
+
+  .overlay.on {
+    display: block; /* 모바일 네비게이션이 열릴 때 보이도록 */
+  }
+
+  /* overlay end */
+
   .mo_gnb {
-    display: initial;
+    overflow: hidden;
+    display: none;
   }
 
   .mo_gnb.on {
     display: block;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 50;
+    z-index: 53;
   }
 
   .mo_gnb .nav_close {
     position: absolute;
     right: 85%;
     margin: 17px 13px 0 0;
-    z-index: 50;
+    z-index: 53;
   }
 
   .mo_gnb .mo_gnb_wrap {
     position: absolute;
-    width: 85%;
-    height: 100%;
+    width: 310px;
+    height: 740px;
     right: 0;
     background: #1d326c;
     overflow-y: auto;
@@ -1257,5 +1284,479 @@ footer .language_tab ul li a:hover {
     color: #fff;
     padding-left: 25px;
     font-family: "Nunito Sans", sans-serif;
+  }
+
+  /* main swiper slide 1*/
+
+  .main {
+    display: none;
+  }
+
+  .mo_main {
+    display: initial;
+  }
+
+  .mo_main .swiper {
+    margin-top: -1px;
+    width: 360px;
+    height: 360px;
+  }
+
+  .mo_main .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mo_main .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* swiper slide 2 */
+
+  .mo_main .mainbeanist {
+    padding: 60px 0 14px;
+    background: url(/images/main_beanist_bg.gif) #fce1a6 no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mo_main .mainbeanist h2 {
+    line-height: 1.1em;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: #3c3c3c;
+  }
+
+  .mo_main .mainbeanist h2 em {
+    display: block;
+    font-weight: 900;
+    color: #90470c;
+  }
+
+  .mo_main .swiper.mySwiper2 {
+    width: 360px;
+    height: 210px;
+  }
+
+  .mo_main .mainbeanist .swiper-slide {
+    display: flex;
+  }
+
+  .mo_main .mainbeanist .swiper-slide ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5px;
+  }
+
+  .mo_main .mainbeanist .swiper-slide ul li a img {
+    display: block;
+    width: 100%;
+    max-width: 74px;
+    height: 130px;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .mo_main .mainbeanist .swiper-slide ul li a {
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #693a13;
+    word-break: keep-all;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .mo_main .mainbeanist .swiper-slide ul li a dl {
+    padding: 0 10px;
+    margin-top: 15px;
+    height: 64px;
+    text-align: center;
+  }
+
+  .mo_main .mainbeanist .swiper-slide ul li a dt {
+    line-height: 1.2em;
+    font-size: 18x;
+    font-weight: 700;
+    color: #693a13;
+    word-break: keep-all;
+  }
+
+  /* DREAM FACTORY */
+  .dream_factory {
+    width: 360px;
+    height: 504px;
+    background: url(/images/dream_factory_bg.gif) repeat-y;
+    background-size: 100% auto;
+    overflow: hidden;
+    word-break: keep-all;
+    position: relative;
+  }
+
+  .dream_factory .factory_title {
+    max-width: 360px;
+    height: 327px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  .factory_title h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    font-family: "Nunito Sans", sans-serif;
+    padding-left: 0px;
+  }
+
+  .factory_title em {
+    text-align: center;
+    font-size: 32px;
+    display: block;
+    font-weight: 900;
+    font-style: normal;
+    -webkit-text-stroke: 1% #fff;
+    color: #fff;
+    padding-top: 60px;
+  }
+
+  .factory_title p {
+    font-size: 17px;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.4em;
+    margin-top: 17px;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .df_btn.main {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .df_btn.main a {
+    display: block;
+    margin: 0 auto;
+    width: 166px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .factory_img {
+    position: absolute;
+    top: 370px;
+    left: 10px;
+  }
+
+  .factory_img img {
+    width: 432px;
+    height: 141px;
+    object-fit: cover;
+  }
+
+  /* Always beside */
+
+  .always_beside {
+    width: 360px;
+    height: 504px;
+  }
+
+  .always_title {
+    position: relative;
+    width: 360px;
+    height: 504px;
+    background-position: 30%;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .always_title h2 {
+    height: 150px;
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 100;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 60px;
+    line-height: 1.1em;
+    z-index: 20;
+  }
+
+  .always_title h2::after {
+    background: none;
+  }
+
+  .always_title h2 em {
+    font-weight: 800;
+    color: #fff;
+    font-style: normal;
+  }
+
+  .always_title h3 {
+    z-index: 20;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    line-height: 1.4em;
+  }
+
+  /* company */
+
+  .company_wrap {
+    width: 360px;
+    height: 504px;
+    background: url(/images/company_bg_m.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+    position: relative;
+  }
+
+  .company_wrap .company_title {
+    max-width: 360px;
+  }
+
+  .company_align h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    font-weight: 100;
+    padding-top: 60px;
+    line-height: 1.2em;
+  }
+
+  .company_align p {
+    font-size: 17px;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.4em;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .company_wrap .df_btn.main {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+  }
+
+  .company_wrap .df_btn.main a {
+    width: 340px;
+  }
+
+  /* bottom */
+
+  .main_bottom {
+    width: 360px;
+    margin: auto;
+    padding: 0px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main_bn {
+    position: relative;
+    width: 100%;
+    padding: 34px 7% 40px 7%;
+    box-sizing: border-box;
+  }
+
+  .main_bn.franchise {
+    background: url(/images/main_franchise_bg.jpg) no-repeat left;
+    background-size: cover;
+    width: 360px;
+    height: 154px;
+  }
+
+  .main_bn.franchise a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_bn.franchise h2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.25em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .main_bn.franchise h2::after {
+    display: block;
+    content: "";
+    width: 42px;
+    height: 1px;
+    background: #fff;
+    margin-top: 20px;
+  }
+
+  .main_bn.franchise p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.25em;
+  }
+
+  /* purchase */
+
+  .main_bn {
+    position: relative;
+    width: 100%;
+    padding: 34px 7% 40px 7%;
+    box-sizing: border-box;
+  }
+
+  .main_bn.store {
+    background: url(/images/main_store_bg.jpg) no-repeat left;
+    background-size: cover;
+    width: 360px;
+    height: 177px;
+  }
+
+  .main_bn.store a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_bn.store h2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.25em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .main_bn.store p {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    color: #fff;
+    font-family: "NanumSquare", sans-serif;
+    line-height: 1.25em;
+  }
+
+  .search_store input {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+  }
+
+  .search_store a img {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+  }
+
+  /* news */
+
+  .news_container {
+    width: 360px;
+    height: 330px;
+    position: relative;
+  }
+
+  .main_news {
+    list-style-type: none;
+    padding: 30px;
+    height: 155px;
+  }
+
+  .main_news h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202023;
+    font-family: "NanumSquare", sans-serif;
+  }
+
+  .more_btn {
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .main_news a {
+    flex-grow: 1;
+    text-decoration: none;
+  }
+
+  .news_container .main_news .date {
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  .main_news ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 21px;
+  }
+
+  .main_news ul li {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main_news ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #7d7d7e;
+    font-family: "Noto Sans KR", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .main_news ul li a:hover {
+    color: #202023;
+  }
+
+  .main_news ul li span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+  }
+
+  .brochure {
+    /* position: relative; */
+    width: 360px;
+    height: 135px;
+    background: #cbc3b2;
+    margin-top: 40px;
+  }
+
+  .brochure a {
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
 }

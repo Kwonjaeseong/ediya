@@ -39,6 +39,9 @@
   <h2 class="nav_btn">
     <a href="#"><span class="blind">서비스 메뉴</span></a>
   </h2>
+  <!-- opacity 배경 -->
+  <div class="overlay"></div>
+  <!-- opacity end -->
   <!-- mobile nav -->
   <div class="mo_gnb">
     <div class="nav_close">
@@ -191,5 +194,37 @@
       $(".sub li").stop().slideToggle();
       $(".bg").stop().slideToggle();
     });
+  });
+
+  // Mobile navigation bar 설정
+  $(".mo_gnb_wrap .mo_main > li > a").on("click", function (e) {
+    e.preventDefault(); // 기본 링크 동작 막기
+    var $parentLi = $(this).parent("li");
+
+    // 현재 클릭된 메뉴의 서브메뉴 토글
+    $parentLi.toggleClass("on");
+    $parentLi.find(".mo_sub").slideToggle(200);
+
+    // 다른 메뉴의 서브메뉴 닫기
+    $parentLi.siblings().removeClass("on");
+    $parentLi.siblings().find(".mo_sub").slideUp(200);
+  });
+
+  $(".nav_btn").on("click", function () {
+    $(this).toggleClass("blind");
+    $(".mo_gnb").toggleClass("on");
+    $(".overlay").toggleClass("on");
+    if ($(".mo_gnb").hasClass("on")) {
+      $("html").css("overflow", "hidden");
+    } else {
+      $("html").css("overflow", "visible");
+    }
+  });
+
+  // nav_close 버튼 클릭 시 모바일 네비게이션 닫기
+  $(".nav_close").on("click", function () {
+    $(".mo_gnb").removeClass("on");
+    $(".overlay").removeClass("on");
+    $("html").css("overflow", "visible");
   });
 </script>
