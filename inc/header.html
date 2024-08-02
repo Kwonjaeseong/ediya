@@ -227,4 +227,12 @@
     $(".overlay").removeClass("on");
     $("html").css("overflow", "visible");
   });
+
+  // 링크 가로채기
+  const redirectUrl = "/page/menu.html";
+
+  $(".gnb > li > a").on("click", function (event) {
+    event.preventDefault(); // 기본 링크 클릭 동작 방지
+    window.location.href = redirectUrl; // 지정한 페이지로 이동
+  });
 </script>

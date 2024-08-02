@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <title>이디야 커피</title>
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -26,16 +27,16 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/images/mainslide1.jpg" alt="" />
+              <a href="#"><img src="/images/mainslide1.jpg" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mainslide2.jpg" alt="" />
+              <a href="#"><img src="/images/mainslide2.jpg" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mainslide3.png" alt="" />
+              <a href="#"><img src="/images/mainslide3.png" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mainslide4.jpg" alt="" />
+              <a href=""><img src="/images/mainslide4.jpg" alt="" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -179,16 +180,16 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/images/mo_slider1.jpg" alt="" />
+              <a href="#"><img src="/images/mo_slider1.jpg" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mo_slider2.jpg" alt="" />
+              <a href="#"><img src="/images/mo_slider2.jpg" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mo_slider3.jpg" alt="" />
+              <a href="#"><img src="/images/mo_slider3.jpg" alt="" /></a>
             </div>
             <div class="swiper-slide">
-              <img src="/images/mo_slider4.png" alt="" />
+              <a href="#"><img src="/images/mo_slider4.png" alt="" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -445,6 +446,14 @@
       $(function () {
         $(".header_container").load("../inc/header.html");
         $(".footer_container").load("../inc/footer.html");
+      });
+
+      // 링크 가로채기
+      const redirectUrl = "/page/menu.html";
+
+      $("a").on("click", function (event) {
+        event.preventDefault(); // 기본 링크 클릭 동작 방지
+        window.location.href = redirectUrl; // 지정한 페이지로 이동
       });
     </script>
     <script src="/js/main.js"></script>
