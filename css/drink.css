@@ -1,4 +1,5 @@
-.menu_contents {}
+.menu_contents {
+}
 
 .main_intro {
   background: url(/images/drink_visual.jpg) no-repeat center;
@@ -255,7 +256,7 @@
   margin-bottom: 60px;
 }
 
-#drink_ul>li {
+#drink_ul > li {
   width: 283px;
   height: 467px;
   float: left;
@@ -267,7 +268,7 @@
   position: relative;
 }
 
-#drink_ul>li>a>img {
+#drink_ul > li > a > img {
   text-align: center;
   width: 100%;
   padding: 32px 0;
@@ -433,4 +434,427 @@
 
 /* mobile */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .main_intro {
+    position: relative;
+    max-width: 360px;
+    background: url(/images/drink_visual.jpg) no-repeat center;
+    background-size: cover;
+    height: 160px;
+    margin-bottom: 76px;
+  }
+
+  .main_intro_tt {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+  }
+
+  .main_intro_tt img {
+    width: 60px;
+    height: 32px;
+  }
+
+  .main_intro .inner_tt {
+    display: none;
+  }
+
+  .inner_txt {
+    display: none;
+  }
+
+  .main_intro .intro_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 간격을 균등하게 배치 */
+    margin-top: 61px;
+    width: 100%;
+    /* 부모 요소에 맞게 설정 */
+    height: auto;
+    /* 자동 높이 설정 */
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+
+  .intro_btn li {
+    flex: 1 0 50%;
+    /* 각 버튼을 2열로 배치 */
+    border: solid 0.5px #98989e;
+    height: 37px;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 테두리를 포함한 크기 조정 */
+  }
+
+  .intro_btn li:first-child,
+  .intro_btn li:nth-child(2) {
+    border-bottom: none;
+    /* 첫 번째와 두 번째 요소는 아래 테두리 제거 */
+  }
+
+  .intro_btn li:nth-child(odd) {
+    border-right: none;
+    /* 홀수 번째 요소는 오른쪽 테두리 제거 */
+  }
+
+  .intro_btn li:nth-child(even) {
+    /* border-left: none; */
+    /* 짝수 번째 요소는 왼쪽 테두리 제거 */
+  }
+
+  .intro_btn li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 37px;
+    color: #202032;
+    text-align: center;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+
+  .intro_btn .btn2 {
+    width: 100%;
+    /* 부모 요소에 맞게 설정 */
+  }
+
+  /* location */
+
+  .location {
+    display: none;
+  }
+
+  .reco_title {
+    width: 90%;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  /* recommend drink swiper slider */
+  .drink_swiper .swiper {
+    width: 360px;
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    margin-left: 100px;
+  }
+  .drink_swiper .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .drink_swiper .swiper-slide p {
+    font-size: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #000;
+  }
+
+  .drink_swiper .swiper-slide img {
+    display: block;
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+  }
+
+  .drink_swiper .swiper-slide .new_icon {
+    top: 30px;
+    left: 10px;
+  }
+
+  .drink_swiper .swiper-slide .new_icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .drink_swiper .swiper-button-next,
+  .drink_swiper .swiper-button-prev {
+    color: #ccc;
+    /* 버튼 색상 */
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  /* MENU SEARCH */
+
+  .menu_cate {
+    margin-top: 100px;
+  }
+
+  .menu_cate .cate_align {
+    margin: 0 auto;
+    width: 360px;
+  }
+
+  .menu_sch {
+    display: block;
+    width: 100%;
+    height: 146px;
+    padding: 23px 0px 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .menu_sch h4 {
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 700;
+    float: left;
+    margin-top: 10px;
+    padding-left: 30px;
+  }
+
+  .menu_sch .search_bar {
+    width: 100%;
+    max-width: 200px;
+    height: 38px;
+    /* margin: auto; */
+    border: solid 1px #d9d9d9;
+    border-radius: 3px;
+    float: right;
+    margin-right: 40px;
+  }
+
+  .search_bar input {
+    width: 81%;
+    height: 36px;
+    border: none;
+  }
+
+  .search_bar button {
+    width: 34px;
+    height: 38px;
+    background: url(/images/icon_search.gif) no-repeat 10px center;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .menu_sch ul {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    padding-top: 20px;
+  }
+
+  .menu_sch ul li {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  /* drink list */
+
+  .drink_list {
+    overflow: hidden;
+  }
+
+  .drink_align {
+    width: 1180px;
+    margin: 0 auto;
+  }
+
+  #drink_ul {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+
+  #drink_ul > li {
+    width: 283px;
+    height: 467px;
+    float: left;
+    padding: 10px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    margin: 0 0.5% 5px;
+    text-align: center;
+    position: relative;
+  }
+
+  #drink_ul > li > a > img {
+    text-align: center;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .drink_tt {
+    height: 70px;
+    margin-top: 5px;
+  }
+
+  .drink_tt a span {
+    display: inline-block;
+    height: 35px;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #000;
+  }
+
+  .drink_tt .gift_btn {
+    display: block;
+    font-size: 15px;
+    width: 70px;
+    height: 25.5px;
+    margin: 10px auto 0;
+    background: #243c84;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25.5px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .drink_detail {
+    display: none;
+  }
+
+  .drink_detail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.9;
+    top: 0;
+    z-index: -1;
+  }
+
+  .drink_detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 0;
+    border: solid 1px #e7e7e7;
+    z-index: 10;
+  }
+
+  .drink_detail .dd_tt {
+    position: relative;
+    width: 78.39%;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .dd_tt h2 {
+    font-size: 20px;
+    color: #202023;
+    font-weight: 600;
+    font-family: "NanumSquare", sans-serif;
+    border-bottom: solid 2px #202023;
+    padding: 27px 0 14px;
+  }
+
+  .dd_tt h2 span {
+    display: block;
+    font-size: 15px;
+    color: #939394;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 3px;
+  }
+
+  .detail_close {
+    position: absolute;
+    top: 12px;
+    right: -10%;
+  }
+
+  .detail_txt {
+    height: 120px;
+    margin: 15px 0;
+  }
+
+  .detail_txt p {
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.6em;
+  }
+
+  .comp {
+    width: 100%;
+    height: auto;
+    display: table;
+    z-index: 10;
+    background: #f8f8f8;
+    padding: 14px 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .comp .drink_nutri {
+    overflow: hidden;
+    background: url(/images/pro_detail_line.gif) no-repeat center #f8f8f8;
+  }
+
+  .drink_nutri dl {
+    float: left;
+    width: 35%;
+    margin-left: 11.49%;
+    font-size: 13px;
+    line-height: 2em;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .drink_nutri dt {
+    float: left;
+    font-weight: 300;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .drink_nutri dd {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  .allergy {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 77.3%;
+    padding: 3px 0 0;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 12px;
+  }
+
+  .high_caffeine {
+    font-family: "Noto Sans KR", sans-serif;
+    clear: left;
+    width: 77.3%;
+    padding: 3px 0;
+    margin: 0 auto;
+    line-height: 1.4em;
+    font-size: 13px;
+  }
+
+  .high_caffeine p {
+    font-weight: 500;
+    color: #233e85;
+  }
+}

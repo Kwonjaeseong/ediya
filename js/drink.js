@@ -52,7 +52,7 @@ function filterDrinks() {
 
 // swiper slide
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
@@ -64,5 +64,12 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3, //브라우저가 768보다 클 때
+      spaceBetween: 40,
+    },
   },
 });
